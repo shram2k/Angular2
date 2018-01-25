@@ -1,0 +1,36 @@
+
+<h1>{{title}}</h1>
+
+<div class="table-responsive">
+        <table class="table">
+   
+                <thead>
+                    <tr>
+                        <td>
+                                Product Number
+                        </td>
+                        <td>
+                                Product Name
+                        </td>
+                        <td>
+                                Product Description
+                        </td>
+                        <td>
+                                Product Price
+                        </td>
+        
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr *ngFor="let product of productList">
+                                <td>{{product.ProductId}}</td> 
+                                <td>{{product.ProductName}}</td> 
+                                <td>{{product.ProductDesc}}</td> 
+                                <td>{{product.ProductPrice}}</td> 
+                         </tr>      
+                </tbody>
+                
+           
+        </table>
+</div>
