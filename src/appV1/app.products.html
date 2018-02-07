@@ -3,7 +3,7 @@
         <div class="panel-body">
                 <div class="row">
                         <div class="col-md-2">Filter By:</div>
-                        <div class="col-md-4"><input type="text" class="form-component" placeholder="type to filter" [(ngModel)]='FilterList' /></div>
+                        <div class="col-md-4"><input type="text" class="form-component" placeholder="type to filter" [(ngModel)]='FilteredBy' /></div>
                         
                 </div>
                 <div class="row">
@@ -38,14 +38,14 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                        <tr *ngFor="let product of FilteredProducts">
+                                        <tr *ngFor="let product of ProductList">
                                                 <td><img *ngIf='ShowImage' 
                                                         [src]='product.ProductImage'
                                                        [title]='product.ProductName'
                                                        [style.width.px]='ImageWidth'
                                                        [style.height.px]='ImageHeight'/>
                                                 </td>
-                                                <td>{{product.ProductCode | convertToSpaces: '-'}}</td> 
+                                                <td>{{product.ProductId}}</td> 
                                                 <td>{{product.ProductName}}</td> 
                                                 <td>{{product.ProductDesc}}</td> 
                                                 <td>{{product.ProductPrice | currency:'USD':true:'1.2-2'}}</td> 
