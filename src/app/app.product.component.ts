@@ -7,7 +7,6 @@ import {IProduct} from './IProduct'
     selector:'app-product-list',
     templateUrl:'./app.products.html'
 })
-
 export class ProductComponent implements OnInit
 {
     Title='Products List';
