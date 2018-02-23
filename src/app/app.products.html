@@ -33,6 +33,9 @@
                                         <td>
                                                 Product Price
                                         </td>
+                                        <td>
+                                                Product Rating
+                                        </td>
                         
                                         
                                     </tr>
@@ -49,6 +52,7 @@
                                                 <td>{{product.ProductName}}</td> 
                                                 <td>{{product.ProductDesc}}</td> 
                                                 <td>{{product.ProductPrice | currency:'USD':true:'1.2-2'}}</td> 
+                                                <td><pm-star [rating]='product.ProductRating'></pm-star></td>
                                          </tr>      
                                 </tbody>
                                 
