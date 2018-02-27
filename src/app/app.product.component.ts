@@ -14,6 +14,7 @@ export class ProductComponent implements OnInit {
     ImageHeight = 50;
     ShowImage = true;
     FilteredProducts: IProduct[];
+
     ProductList: IProduct[];
     // ProductList: IProduct[] = [
     //     {
@@ -53,6 +54,7 @@ export class ProductComponent implements OnInit {
     //         ProductRating: 1
     //     }
     // ];
+
     _listFilter: string;
     
     constructor(private _productService: ProductService) {
@@ -95,4 +97,5 @@ export class ProductComponent implements OnInit {
     onRatingClicked(message: string): void {
         this.Title = 'Product List: ' + message;
     }
+
 }
